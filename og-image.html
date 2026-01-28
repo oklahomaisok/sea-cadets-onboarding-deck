@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Image - USNSCC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Liberator';
+            src: url('Liberator-Heavy.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 1200px;
+            height: 630px;
+            overflow: hidden;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .og-container {
+            width: 1200px;
+            height: 630px;
+            position: relative;
+            background-color: #1D2350;
+        }
+
+        .background-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 75%;
+            opacity: 0.8;
+        }
+
+        .gradient-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, #1D2350 0%, rgba(29, 35, 80, 0.3) 50%, transparent 100%);
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 48px 64px;
+        }
+
+        .logo {
+            height: 64px;
+            width: auto;
+            object-fit: contain;
+            margin-top: -30px;
+        }
+
+        .text-container {
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-family: 'Liberator', 'Oswald', sans-serif;
+            font-size: 96px;
+            line-height: 0.9;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 0.02em;
+            text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+        }
+
+        h1 .highlight {
+            color: #FFC303;
+        }
+
+        .tagline {
+            font-family: 'Roboto Slab', serif;
+            font-size: 24px;
+            color: #e5e5e5;
+            margin-top: 24px;
+            padding-left: 20px;
+            border-left: 4px solid #FFC303;
+            max-width: 600px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 48px;
+            right: 64px;
+            background: #FFC303;
+            color: #1D2350;
+            font-family: 'Roboto Slab', serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="og-container">
+        <img src="cadet-closeup2.jpg" alt="" class="background-image">
+        <div class="gradient-overlay"></div>
+
+        <div class="content">
+            <img src="logo.png" alt="USNSCC Logo" class="logo">
+
+            <div class="text-container">
+                <h1>Welcome<br><span class="highlight">Aboard</span></h1>
+                <p class="tagline">You've taken the first step toward a future of leadership and adventure.</p>
+            </div>
+        </div>
+
+        <div class="badge">Parent Intro</div>
+    </div>
+</body>
+</html>
